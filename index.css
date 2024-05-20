@@ -1,0 +1,40 @@
+.main{
+    color: red;
+}
+.box-part{
+    margin: 0%;
+    padding-left: 0%;
+}
+.fa{
+    color: orange;
+}
+.rate {
+    float: left;
+  }
+  
+  .rate:not(:checked) > input {
+    position: absolute;
+    top: -100px;
+  }
+  
+  .rate:not(:checked) > label {
+    float: right;
+    width: 1em;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 45px;
+  }
+  
+  .rate:not(:checked) > label:before {
+    content: "   ★    ";
+  }
+  
+  .rate > input:checked ~ label {
+    color: rgb(238, 172, 130);
+  }
+  
+  .rate:not(:checked) > label:hover,
+  .rate:not(:checked) > label:hover ~ label {
+    color: rgb(226, 155, 111);
+  }
